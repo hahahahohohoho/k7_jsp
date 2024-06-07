@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<%
+int num=0;
+try{
+	num = Integer.parseInt(request.getParameter("dan"));
+}
+catch(Exception e){
+	num=0;
+}
+%>
+ <% // 이것도 같은 방식으로 for문을 돌리는 것이지만 위의 방법을 더 많이 사용
+	 for(int i=1; i<10; i++) {
+	 	out.println(" <p>" + num +" * " + i + " = " + num*i + "</p>");	 
+	 } 
+ %>
+</body>
+</html>

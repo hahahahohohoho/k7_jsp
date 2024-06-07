@@ -1,0 +1,32 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%!
+public int[] dan1(int num1){
+	int dan[] = new int[9];
+	for (int i=1; i<10; i++){
+		dan[i] = i*num1;
+	}
+	return dan;
+}
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<%
+int[] result = new int[9]; int num;
+try{
+	num = Integer.parseInt(request.getParameter("dan"));
+	result = dan1(num);	
+} catch(Exception e){
+	num=0;
+} 
+%>
+<%= num + " * 1 = " %><br />
+<%= num + " * 1 = " + result[10] %><br />
+</body>
+</html>
