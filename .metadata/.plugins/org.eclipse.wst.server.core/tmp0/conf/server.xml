@@ -142,7 +142,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\SS\jsp_works\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\SS\jsp_works\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\MustHaveJSP" path="/MustHaveJSP" reloadable="true" source="org.eclipse.jst.jee.server:MustHaveJSP"/><Context docBase="C:\SS\jsp_works\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\JSPMission1" path="/JSPMission1" reloadable="true" source="org.eclipse.jst.jee.server:JSPMission1"/></Host>
+      <Context docBase="C:\SS\jsp_works\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\SS\jsp_works\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\JSPMission" path="/JSPMission" reloadable="true" source="org.eclipse.jst.jee.server:JSPMission"/><Context docBase="C:\SS\jsp_works\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\MustHaveJSP" path="/MustHaveJSP" reloadable="true" source="org.eclipse.jst.jee.server:MustHaveJSP"/></Host>
     </Engine>
   </Service>
 </Server>
